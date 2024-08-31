@@ -58,7 +58,16 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section light-background">
 
-      <img src="assets/img/hero-bg-2.jpg" alt="">
+     <picture>
+        <!-- For screens between 768px and 1023px -->
+        <source media="(min-width: 768px)" srcset="assets/img/hero-bg-1.jpg">
+        
+        <!-- For screens smaller than 768px -->
+        <source media="(max-width: 767px)" srcset="assets/img/hero-bg-mobile.jpg">
+        
+        <!-- Default image as a fallback -->
+        <img src="assets/img/hero-bg-2.jpg" alt="profile">
+    </picture>
 
       <div class="container" data-aos="zoom-out">
         <div class="row justify-content-center">
